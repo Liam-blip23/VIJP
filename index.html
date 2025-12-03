@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quản Lý Khách Hàng - PRO Version</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS phải nằm cùng thư mục với HTML -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
     <nav>
       <button id="btn-show-search" type="button">Tìm kiếm khách hàng</button>
       <button id="btn-show-add" type="button">Thêm khách hàng mới</button>
-      <button id="btn-logout">Đăng xuất</button>
+      <button id="btn-logout" type="button">Đăng xuất</button>
     </nav>
   </section>
 
@@ -152,7 +153,7 @@
 
       <div style="margin-top:10px;display:flex;gap:8px;">
         <button type="submit" id="btn-save">Lưu</button>
-        <button type="button" id="btn-reset" onclick="resetAddForm()">Reset</button>
+        <button type="button" id="btn-reset">Reset</button>
         <button type="button" class="back" id="btn-back-from-add">Quay lại</button>
       </div>
 
@@ -162,6 +163,7 @@
 
 </main>
 
-<script src="app.js"></script>
+<!-- JS phải nằm cùng thư mục và defer để chạy sau khi DOM load -->
+<script src="./app.js" defer></script>
 </body>
 </html>

@@ -225,3 +225,22 @@ button:disabled {
 .flex-row > div {
     flex: 1;
 }
+
+/* =========================
+   NHÓM INPUT CHOME/BAN và GO/BUILDING
+========================= */
+#add-menu .flex-row input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    margin-top: 6px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+#add-menu .flex-row input:focus {
+    border-color: #0078ff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 120, 255, 0.4);
+}
